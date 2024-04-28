@@ -1,0 +1,26 @@
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  line-height: 1.1; // 110% line height
+  margin-top: 0;
+  color: var(--text-heading);
+  font-family: var(--heading-font);
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 1rem;
+  font-family: var(--body-typeface);
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.03125rem;
+  color: var(--text-body);
+  margin: 0 0 0.5rem 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}

@@ -1,0 +1,19 @@
+@use "../abstracts";
+
+.nav__container {
+  margin: 0;
+  padding: 1rem;
+  list-style-type: none;
+  background-color: var(--light-grey);
+  display: flex;
+  justify-content: space-between;
+  // at tablet - left align buttons
+  @include abstracts.breakpointUp(small) {
+    justify-content: flex-start;
+    gap: 2.5rem;
+  }
+  @include abstracts.breakpointUp(large) {
+    gap: 2.5rem;
+    padding: 1rem 2rem;
+  }
+}
