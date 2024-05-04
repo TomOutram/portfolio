@@ -1,0 +1,28 @@
+@use "../abstracts";
+
+.banner {
+  margin: 0 1rem 0.5rem 1rem;
+  background-color: var(--light-grey);
+  border-radius: 12px;
+  height: 10rem;
+  max-width: 120rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../app/img/banner-test.png");
+  background-position-y: center;
+  background-position-x: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include abstracts.breakpointUp(small) {
+    height: 11rem;
+  }
+  @include abstracts.breakpointUp(medium) {
+    height: 12.5rem;
+    margin-bottom: 1rem;
+  }
+  @include abstracts.breakpointUp(large) {
+    height: 18.75rem;
+  }
+}
