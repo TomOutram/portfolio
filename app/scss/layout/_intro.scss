@@ -1,35 +1,34 @@
 @use "../abstracts";
 
 .intro {
-  margin: 0 1rem;
+  margin: 0 1rem 3rem 1rem;
   display: flex;
   justify-content: center;
-}
-
-.intro__container {
-  padding: 1rem;
-  background-color: var(--light-grey);
-  border-radius: 12px;
-  max-width: 75rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  @include abstracts.breakpointUp(medium) {
-    padding: 2rem;
+  &__container {
+    padding: 1rem;
+    background-color: var(--light-grey);
+    border-radius: 0.75rem;
+    max-width: 75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    @include abstracts.breakpointUp(medium) {
+      padding: 2rem;
+    }
+    @include abstracts.breakpointUp(large) {
+      padding: 3rem 2rem;
+      margin-bottom: 4.5rem;
+    }
   }
-  @include abstracts.breakpointUp(large) {
-    padding: 3rem 2rem;
-  }
-}
-
-.intro__text-container {
-  max-width: 30rem;
-  @include abstracts.breakpointUp(medium) {
-    max-width: 40rem;
-  }
-  @include abstracts.breakpointUp(large) {
-    max-width: 50rem;
+  &__text-container {
+    max-width: 30rem;
+    @include abstracts.breakpointUp(medium) {
+      max-width: 40rem;
+    }
+    @include abstracts.breakpointUp(large) {
+      max-width: 50rem;
+    }
   }
 }

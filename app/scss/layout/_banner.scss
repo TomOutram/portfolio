@@ -3,7 +3,7 @@
 .banner {
   margin: 0 1rem 0.5rem 1rem;
   background-color: var(--light-grey);
-  border-radius: 12px;
+  border-radius: 0.75rem;
   height: 10rem;
   max-width: 120rem;
   display: flex;
@@ -24,5 +24,6 @@
   }
   @include abstracts.breakpointUp(large) {
     height: 18.75rem;
+    margin-bottom: 2rem;
   }
 }
