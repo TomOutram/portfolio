@@ -1,4 +1,13 @@
 main {
-  margin: 0 auto;
   max-width: 75rem;
+  margin: 0 auto;
+}
+
+.main--contact {
+  max-width: 50rem;
+}
+
+.main-wrapper {
+  width: 100%;
+  flex-grow: 1;
 }

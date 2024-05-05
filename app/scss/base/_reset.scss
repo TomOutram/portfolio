@@ -15,4 +15,8 @@ body {
   font-family: var(--body-font);
   background-color: var(--white);
   color: var(--text-body);
+  // new
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

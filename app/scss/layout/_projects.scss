@@ -4,6 +4,7 @@
   padding: 0 1rem;
   margin-bottom: 3rem;
   width: 100%;
+  flex-grow: 1;
   @include abstracts.breakpointUp(small) {
     padding: 0 2rem;
     margin-bottom: 4rem;
@@ -48,6 +49,8 @@
     gap: 1rem;
     border-radius: 0.75rem;
     border: 1px solid var(--dark-grey);
+    width: 100%;
+
     &:hover {
       border-width: 2px;
       background-color: var(--light-grey);

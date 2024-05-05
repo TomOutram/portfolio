@@ -4,7 +4,7 @@
   margin: 0 1rem 0.5rem 1rem;
   background-color: var(--light-grey);
   border-radius: 0.75rem;
-  height: 10rem;
+  padding: 3rem 0;
   max-width: 120rem;
   display: flex;
   flex-direction: column;
@@ -12,21 +12,22 @@
   align-items: center;
   background-image: url("../app/img/banner-test.png");
   background-position-y: center;
-  background-position-x: 70%;
+  background-position-x: 60%;
   background-repeat: no-repeat;
   background-size: cover;
   @include abstracts.breakpointUp(small) {
-    height: 11rem;
+    padding: 3.5rem 0;
   }
   @include abstracts.breakpointUp(medium) {
-    height: 12.5rem;
+    padding: 4rem 0;
     margin-bottom: 1rem;
   }
   @include abstracts.breakpointUp(large) {
-    height: 18.75rem;
+    padding: 4.5rem 0;
     margin-bottom: 2rem;
   }
-  &--projects-page {
+  &--projects-page,
+  &--contacts-page {
     margin-bottom: 2rem;
     @include abstracts.breakpointUp(large) {
       margin-bottom: 3.5rem;
