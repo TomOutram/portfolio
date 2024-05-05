@@ -32,6 +32,11 @@
       gap: 1.5rem;
       margin-bottom: 3rem;
     }
+    &--project-page {
+      @include abstracts.breakpointUp(large) {
+        flex-wrap: wrap;
+      }
+    }
   }
 
   // card layout
@@ -67,6 +72,9 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 0;
+    }
+    @include abstracts.breakpointUp(large) {
+      width: calc(33% - 1rem);
     }
   }
 }

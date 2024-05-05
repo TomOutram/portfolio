@@ -255,6 +255,14 @@ main {
     margin-bottom: 2rem;
   }
 }
+.banner--projects-page {
+  margin-bottom: 2rem;
+}
+@media (min-width: 75em) {
+  .banner--projects-page {
+    margin-bottom: 3.5rem;
+  }
+}
 
 .intro {
   padding: 0 1rem;
@@ -329,6 +337,11 @@ main {
     margin-bottom: 3rem;
   }
 }
+@media (min-width: 75em) {
+  .projects__card-row--project-page {
+    flex-wrap: wrap;
+  }
+}
 .projects__card {
   padding: 1rem;
   display: flex;
@@ -367,6 +380,11 @@ main {
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
+  }
+}
+@media (min-width: 75em) {
+  .projects__card {
+    width: calc(33% - 1rem);
   }
 }
 

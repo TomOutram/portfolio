@@ -26,4 +26,10 @@
     height: 18.75rem;
     margin-bottom: 2rem;
   }
+  &--projects-page {
+    margin-bottom: 2rem;
+    @include abstracts.breakpointUp(large) {
+      margin-bottom: 3.5rem;
+    }
+  }
 }
