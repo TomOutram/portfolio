@@ -3,20 +3,36 @@
 // --- CTA button
 .btn {
   // desktop styling
-  padding: 18px 48px;
+  display: flex;
+  gap: 0.65rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
   background-color: var(--brand-purple);
   color: var(--white);
   font-family: var(--body-typeface);
-  font-size: 18px; //14px
-  font-weight: 600;
-  line-height: 1.125rem;
-  letter-spacing: 0.03rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
   border: none;
   border-radius: 32rem;
   transition: background-color 0.05s ease;
   &:hover {
     cursor: pointer;
     background-color: var(--brand-purple-dark);
+  }
+  @include abstracts.breakpointUp(small) {
+    width: auto;
+  }
+  @include abstracts.breakpointUp(large) {
+    padding: 1.125rem 3rem;
+    font-size: 1.125rem;
+  }
+  &-arrow {
+    @include abstracts.breakpointUp(large) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 }
 

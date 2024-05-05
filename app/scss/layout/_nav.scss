@@ -10,10 +10,9 @@
   // at tablet - left align buttons
   @include abstracts.breakpointUp(small) {
     justify-content: flex-start;
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
   @include abstracts.breakpointUp(large) {
-    gap: 2.5rem;
     padding: 1rem 2rem;
   }
 }

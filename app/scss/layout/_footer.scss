@@ -1,0 +1,20 @@
+@use "../abstracts";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  border-top: 1px solid var(--dark-grey);
+  &__socials-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  &__socials-logo {
+    @include abstracts.breakpointUp(large) {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

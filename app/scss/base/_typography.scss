@@ -68,24 +68,14 @@ a:active {
     font-size: 1.375rem;
   }
 }
-// *** homepage latest projects ***
 
+// *** homepage latest projects ***
 .projects {
-  &__title-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    @include abstracts.breakpointUp(large) {
-      width: 75rem;
-    }
-  }
   &__title {
     font-weight: 700;
     font-size: 1.5rem;
     font-family: var(--body-typeface);
     margin-bottom: 1rem;
-    max-width: 75rem;
-    flex-grow: 1;
     @include abstracts.breakpointUp(small) {
       font-size: 1.625rem;
     }
@@ -121,5 +111,15 @@ a:active {
     @include abstracts.breakpointUp(large) {
       font-size: 1rem;
     }
+  }
+}
+
+// footer copyright
+.footer__copyright {
+  font-family: var(--body-typeface);
+  font-weight: 400;
+  font-size: 0.75rem;
+  @include abstracts.breakpointUp(medium) {
+    font-size: 0.875rem;
   }
 }
