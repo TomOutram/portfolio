@@ -66,3 +66,31 @@
     }
   }
 }
+
+// --- Project banner back button
+
+.banner-project__back-btn {
+  border: none;
+  background-color: transparent;
+  font-family: var(--body-typeface);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-grey);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  @include abstracts.breakpointUp(large) {
+    font-size: 1rem;
+  }
+}
+// back chevron icon
+.banner-project__back-btn svg {
+  width: 1rem;
+  height: 1rem;
+  @include abstracts.breakpointUp(large) {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+}

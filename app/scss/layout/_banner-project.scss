@@ -1,0 +1,36 @@
+@use "../abstracts";
+
+.banner-project {
+  margin: 0 1rem 0.5rem 1rem;
+  background-color: var(--light-grey);
+  border-radius: 0.75rem;
+  padding: 2rem 1rem;
+  max-width: 120rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  background-color: #bdbdbd;
+  @include abstracts.breakpointUp(small) {
+    padding: 3.5rem 1rem;
+  }
+  @include abstracts.breakpointUp(medium) {
+    padding: 3.5rem 2rem;
+  }
+  @include abstracts.breakpointUp(large) {
+    padding: 3.5rem 3rem;
+  }
+  &__hero-img {
+    background-color: #bdbdbd;
+    width: calc(100% - 32px);
+    min-height: 150px;
+    border-radius: 0.75rem;
+    margin: 0 1rem 2rem 1rem;
+  }
+  &__title {
+    margin-bottom: 0.5rem;
+  }
+  &__summary {
+    margin-bottom: 1.5rem;
+  }
+}

@@ -15,6 +15,12 @@
   @include abstracts.breakpointUp(large) {
     margin-bottom: 5rem;
   }
+  &__title {
+    margin-bottom: 1rem;
+    @include abstracts.breakpointUp(large) {
+      margin-bottom: 2rem;
+    }
+  }
 
   // card row container
   &__card-row {
@@ -42,6 +48,7 @@
 
   // card layout
   &__card {
+    color: var(--black);
     padding: 1rem;
     display: flex;
     flex-direction: row;
@@ -78,6 +85,11 @@
     }
     @include abstracts.breakpointUp(large) {
       width: calc(33% - 1rem);
+    }
+  }
+  &__card-title {
+    @include abstracts.breakpointUp(medium) {
+      margin-bottom: 0.5rem;
     }
   }
 }

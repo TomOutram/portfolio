@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../app/img/banner-test.png");
+  background-image: url("../app/img/main-banner.png");
   background-position-y: center;
   background-position-x: 60%;
   background-repeat: no-repeat;
@@ -32,5 +32,8 @@
     @include abstracts.breakpointUp(large) {
       margin-bottom: 3.5rem;
     }
+  }
+  &__main-title {
+    margin-bottom: 0.5rem;
   }
 }
