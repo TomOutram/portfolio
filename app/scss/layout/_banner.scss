@@ -2,11 +2,11 @@
 
 .banner {
   margin: 0 1rem 0.5rem 1rem;
-  background-color: var(--light-grey);
   border-radius: 0.75rem;
   padding: 3rem 0;
   max-width: 120rem;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -25,6 +25,11 @@
   @include abstracts.breakpointUp(large) {
     padding: 4.5rem 0;
     margin-bottom: 2rem;
+  }
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   &--projects-page,
   &--contacts-page {

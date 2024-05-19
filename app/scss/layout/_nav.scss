@@ -1,18 +1,26 @@
 @use "../abstracts";
 
-.nav__container {
-  margin: 0 0 0.5rem 0;
-  padding: 1rem;
-  list-style-type: none;
+.nav {
+  width: 100%;
   background-color: var(--light-grey);
+  margin-bottom: 0.5rem;
   display: flex;
-  justify-content: space-between;
-  // at tablet - left align buttons
-  @include abstracts.breakpointUp(small) {
-    justify-content: flex-start;
-    gap: 1.5rem;
-  }
-  @include abstracts.breakpointUp(large) {
-    padding: 1rem 2rem;
+  justify-content: center;
+  &__container {
+    margin: 0;
+    flex-grow: 1;
+    max-width: 120rem;
+    padding: 1rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    // at tablet - left align buttons
+    @include abstracts.breakpointUp(small) {
+      justify-content: flex-start;
+      gap: 1.5rem;
+    }
+    @include abstracts.breakpointUp(large) {
+      padding: 1rem 2rem;
+    }
   }
 }
