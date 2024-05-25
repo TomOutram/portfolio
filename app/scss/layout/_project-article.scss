@@ -5,6 +5,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include abstracts.breakpointUp(small) {
+    margin: 0 2rem;
+  }
   @include abstracts.breakpointUp(large) {
     flex-direction: row;
     justify-content: flex-end;
@@ -124,9 +127,18 @@
   // text blocks -----------------------
   &__text-block-container {
     max-width: 50rem;
+    @include abstracts.breakpointUp(large) {
+      margin-right: 2rem;
+    }
   }
   &__text-block {
     margin-bottom: 3rem;
+    @include abstracts.breakpointUp(medium) {
+      margin-bottom: 4rem;
+    }
+    @include abstracts.breakpointUp(large) {
+      margin-bottom: 5rem;
+    }
   }
   &__h2-title {
     margin-bottom: 1rem;

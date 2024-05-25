@@ -9,9 +9,11 @@
   max-width: 1920px;
   @include abstracts.breakpointUp(medium) {
     gap: 1rem;
+    margin-bottom: 3rem;
   }
   @include abstracts.breakpointUp(large) {
     flex-direction: row;
+    margin-bottom: 5rem;
   }
 
   &__hero-banner {
