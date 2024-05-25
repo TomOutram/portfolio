@@ -26,34 +26,36 @@
     <!-- banner -->
     <div class="banner-project">
       <div class="banner-project__hero-banner">
-        <a href="projects.html" class="banner-project__back-btn">
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 18 18"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <mask
-              id="mask0_447_535"
-              style="mask-type: alpha"
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
+        <div class="banner-project__back-btn-container">
+          <a href="projects.html" class="banner-project__back-btn">
+            <svg
               width="18"
               height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <rect width="18" height="18" fill="#D9D9D9" />
-            </mask>
-            <g mask="url(#mask0_447_535)">
-              <path
-                d="M10.5 13.5L6 9L10.5 4.5L11.55 5.55L8.1 9L11.55 12.45L10.5 13.5Z"
-                fill="#575757"
-              />
-            </g>
-          </svg>
-          All projects
-        </a>
+              <mask
+                id="mask0_447_535"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="18"
+                height="18"
+              >
+                <rect width="18" height="18" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_447_535)">
+                <path
+                  d="M10.5 13.5L6 9L10.5 4.5L11.55 5.55L8.1 9L11.55 12.45L10.5 13.5Z"
+                  fill="#575757"
+                />
+              </g>
+            </svg>
+            All projects
+          </a>
+        </div>
         <h1 class="banner-project__title">Users and Stakeholders</h1>
         <div class="banner-project__summary">
           Some of my contributions to the Ministry of Education’s design system.
@@ -376,8 +378,98 @@
                 euismod est aliquet. Cras eget iaculis dolor.
               </p>
             </div>
+            <!-- previous / next buttons -->
+            <div class="project-article__article-nav-container">
+              <!-- previous button -->
+              <a
+                href="projects.html"
+                div
+                class="project-article__article-nav-btn"
+              >
+                <div class="project-article__prev-next-container">
+                  <svg
+                    class="project-article__article-nav-btn-prev-arrow"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="mask0_455_623"
+                      style="mask-type: alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="16"
+                      height="16"
+                    >
+                      <rect
+                        x="16"
+                        y="16"
+                        width="16"
+                        height="16"
+                        transform="rotate(-180 16 16)"
+                        fill="#D9D9D9"
+                      />
+                    </mask>
+                    <g mask="url(#mask0_455_623)">
+                      <path
+                        d="M6.66683 4L7.60016 4.96667L5.2335 7.33333L13.3335 7.33333L13.3335 8.66667L5.2335 8.66667L7.60016 11.0333L6.66683 12L2.66683 8L6.66683 4Z"
+                        fill="#3e3e49"
+                      />
+                    </g>
+                  </svg>
+                  Previous
+                </div>
+                Projects</a
+              >
+              <!-- next button -->
+              <a
+                href="projects.html"
+                div
+                class="project-article__article-nav-btn project-article__article-nav-btn--next"
+              >
+                <div class="project-article__prev-next-container">
+                  Next
+                  <svg
+                    class="project-article__article-nav-btn-next-arrow"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="mask0_455_623"
+                      style="mask-type: alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="16"
+                      height="16"
+                    >
+                      <rect
+                        x="16"
+                        y="16"
+                        width="16"
+                        height="16"
+                        transform="rotate(-180 16 16)"
+                        fill="#D9D9D9"
+                      />
+                    </mask>
+                    <g mask="url(#mask0_455_623)">
+                      <path
+                        d="M6.66683 4L7.60016 4.96667L5.2335 7.33333L13.3335 7.33333L13.3335 8.66667L5.2335 8.66667L7.60016 11.0333L6.66683 12L2.66683 8L6.66683 4Z"
+                        fill="#3e3e49"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                Example article</a
+              >
+            </div>
           </div>
-          <!-- previous / next buttons -->
         </article>
       </main>
     </div>
