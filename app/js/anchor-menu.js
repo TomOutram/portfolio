@@ -22,7 +22,7 @@ function setSelectedAnchor(anchorItem) {
 // check scroll position and set the current text block the user is on
 // ----------------------------------------------------------------------
 // set the current text block (1 to start with)
-let currentTextBlock = "textBlock-1";
+let currentTextBlock = "textBlock-0";
 // add listener for scroll
 window.addEventListener("scroll", () => {
   // check if scrolled past the top of a text block
