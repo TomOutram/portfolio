@@ -153,4 +153,53 @@
     .project-article__anchor-menu-item-cap {
     background-color: var(--brand-purple);
   }
+  // image blocks -----------------------
+  &__img-block {
+    background-color: var(--mid-grey);
+    padding: 0.5rem;
+    border-radius: 0.625rem;
+    margin-bottom: 1rem;
+    @include abstracts.breakpointUp(small) {
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+    @include abstracts.breakpointUp(large) {
+      border-radius: 1.5rem;
+    }
+  }
+  &__img-block-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.3125rem;
+    &:not(:first-of-type) {
+      margin-top: 1rem;
+      @include abstracts.breakpointUp(small) {
+        margin-top: 2rem;
+      }
+      @include abstracts.breakpointUp(large) {
+        margin-top: 2.5rem;
+      }
+    }
+    @include abstracts.breakpointUp(small) {
+      border-radius: 0.5rem;
+    }
+    @include abstracts.breakpointUp(large) {
+      border-radius: 0.75rem;
+    }
+  }
+  &__img-block-caption {
+    font-family: var(--body-typeface);
+    font-size: 0.6875rem;
+    color: var(--text-body);
+    line-height: 1rem;
+    margin-top: 0.5rem;
+    @include abstracts.breakpointUp(small) {
+      font-size: 0.875rem;
+      margin-top: 0.75rem;
+    }
+    @include abstracts.breakpointUp(large) {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
 }
