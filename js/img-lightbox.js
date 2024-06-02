@@ -15,6 +15,9 @@ function promteToLightbox(image) {
   // disable scroll
   document.body.style.overflow = "hidden";
 
+  // adjust body padding
+  document.body.style.paddingRight = "15px";
+
   // create lightBox element
   let lightBox = document.createElement("div");
   lightBox.className = "lightBox";
@@ -46,5 +49,8 @@ function closeLightBox(e) {
 
     // enable scroll
     document.body.style.overflow = "auto";
+
+    // adjust body padding
+    document.body.style.paddingRight = "0";
   }
 }
