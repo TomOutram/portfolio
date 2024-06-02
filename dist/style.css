@@ -12,6 +12,7 @@ L >= 1199.98px
   --text-heading: #1f1f1f;
   --text-body: #19181c;
   --text-grey: #3e3e49;
+  --text-mid-grey: #525260;
   --text-light-grey: #959595;
   --brand-purple: #513deb;
   --brand-purple-light: #d3d5ff;
@@ -49,6 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  word-break: break-word;
 }
 
 h1,
@@ -897,6 +899,7 @@ main {
   padding: 0.5rem;
   border-radius: 0.625rem;
   margin-bottom: 1rem;
+  position: relative;
 }
 @media (min-width: 25.9375em) {
   .project-article__img-block {
@@ -913,6 +916,9 @@ main {
   width: 100%;
   height: auto;
   border-radius: 0.3125rem;
+}
+.project-article__img-block-image:hover {
+  cursor: pointer;
 }
 .project-article__img-block-image:not(:first-of-type) {
   margin-top: 1rem;
@@ -955,6 +961,45 @@ main {
     font-size: 1rem;
     margin-bottom: 0.5rem;
   }
+}
+
+.lightBox {
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightBoxImg {
+  width: 100%;
+}
+@media (min-width: 54rem) {
+  .lightBoxImg {
+    width: 864px;
+  }
+}
+
+.lightBoxCloseBtn {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
+  background-color: var(--text-grey);
+  top: 1rem;
+  right: 1rem;
+  position: absolute;
+}
+.lightBoxCloseBtn:hover {
+  cursor: pointer;
+  background-color: var(--text-mid-grey);
 }
 
 .btn {
