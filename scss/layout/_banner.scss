@@ -10,7 +10,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/main-banner.png");
   background-position-y: center;
   background-position-x: 60%;
   background-repeat: no-repeat;
@@ -26,17 +25,28 @@
     padding: 4.5rem 0;
     margin-bottom: 2rem;
   }
-  &__container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  // banner images ------
+  &--home {
+    background-image: url("../img/banner-homepage.png");
   }
-  &--projects-page,
-  &--contacts-page {
+  &--projects {
+    background-image: url("../img/banner-homepage.png");
+  }
+  &--contact {
+    background-image: url("../img/banner-homepage.png");
+  }
+  // banner spacing ------
+  &--projects,
+  &--contact {
     margin-bottom: 2rem;
     @include abstracts.breakpointUp(large) {
       margin-bottom: 3.5rem;
     }
+  }
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   &__main-title {
     margin-bottom: 0.5rem;
