@@ -443,10 +443,10 @@ main {
   background-image: url("../img/banner-homepage.png");
 }
 .banner--projects {
-  background-image: url("../img/banner-homepage.png");
+  background-image: url("../img/green-banner.png");
 }
 .banner--contact {
-  background-image: url("../img/banner-homepage.png");
+  background-image: url("../img/orange-banner.png");
 }
 .banner--projects, .banner--contact {
   margin-bottom: 2rem;
