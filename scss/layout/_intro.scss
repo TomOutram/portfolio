@@ -12,13 +12,16 @@
   }
   &__container {
     padding: 1rem;
+    padding-bottom: 0.5rem;
     background-color: var(--brand-purple-grey);
     border-radius: 0.75rem;
     @include abstracts.breakpointUp(medium) {
       padding: 2rem;
+      padding-bottom: 1.5rem;
     }
     @include abstracts.breakpointUp(large) {
       padding: 3rem 2rem;
+      padding-bottom: 2.5rem;
     }
   }
 }

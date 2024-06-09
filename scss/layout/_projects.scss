@@ -51,9 +51,8 @@
     color: var(--black);
     padding: 1rem;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
     border-radius: 0.75rem;
     border: 1px solid var(--dark-grey);
     width: 100%;
@@ -63,9 +62,6 @@
       background-color: var(--light-grey);
       padding: 0.9375rem;
       cursor: pointer;
-      @include abstracts.breakpointUp(medium) {
-        padding: 1.4375rem;
-      }
     }
     // card hover colours
     &--homepage:hover {
@@ -75,29 +71,23 @@
     &--projects:hover {
       background-color: var(--brand-purple-grey);
     }
+    // card image
     &-img {
-      width: 3rem;
-      height: 3rem;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid var(--dark-grey);
+      margin-top: 2rem;
+      display: none;
       @include abstracts.breakpointUp(medium) {
-        width: 4rem;
-        height: 4rem;
-        margin-bottom: 2rem;
+        display: block;
       }
     }
     @include abstracts.breakpointUp(medium) {
       width: calc(50% - 0.75rem);
-      padding: 1.5rem;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0;
     }
     @include abstracts.breakpointUp(large) {
       width: calc(33% - 1rem);
-    }
-  }
-  &__card-title {
-    @include abstracts.breakpointUp(medium) {
-      margin-bottom: 0.5rem;
     }
   }
 }
