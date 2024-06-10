@@ -20,6 +20,13 @@ L >= 1199.98px
   --brand-purple-dark: #2c16d5;
   --brand-purple-grey: #efeffc;
   --brand-purple-dark-grey: #c4c6e4;
+  --brand-green-light: #a8f0a8;
+  --brand-green-mid: #81e481;
+  --brand-green-grey: #f1fcee;
+  --brand-green-dark-grey: #cce4c4;
+  --brand-orange-light: #f7d4d4;
+  --brand-orange-mid: #f2c0c0;
+  --brand-orange-grey: #fcf5ee;
   --white: #ffffff;
   --black: #000000;
   --off-white: #fafafa;
@@ -404,10 +411,10 @@ main {
   background-color: var(--brand-purple-grey);
 }
 .nav--projects {
-  background-color: var(--light-grey);
+  background-color: var(--brand-green-grey);
 }
 .nav--contact {
-  background-color: var(--light-grey);
+  background-color: var(--brand-orange-grey);
 }
 
 .banner {
@@ -646,7 +653,8 @@ main {
   border-color: var(--brand-purple-dark-grey);
 }
 .projects__card--projects:hover {
-  background-color: var(--brand-purple-grey);
+  background-color: var(--brand-green-grey);
+  border-color: var(--brand-green-dark-grey);
 }
 .projects__card-img {
   width: 100%;
@@ -713,7 +721,7 @@ main {
   gap: 1rem;
   display: flex;
   align-items: center;
-  background-color: var(--light-grey);
+  background-color: var(--brand-orange-grey);
   border-radius: 0.75rem;
   margin-bottom: 1rem;
 }
@@ -731,6 +739,15 @@ main {
   .contact__icon-container {
     width: 4rem;
     height: 4rem;
+  }
+}
+.contact__emoji {
+  line-height: 1;
+  font-size: 1.5rem;
+}
+@media (min-width: 48em) {
+  .contact__emoji {
+    font-size: 2rem;
   }
 }
 @media (min-width: 48em) {
@@ -1076,12 +1093,26 @@ main {
   cursor: pointer;
   background-color: var(--dark-grey);
 }
-.nav__btn--selected {
+.nav__btn--selected-home {
   color: var(--text-heading);
   background-color: var(--brand-purple-light);
 }
-.nav__btn--selected:hover {
+.nav__btn--selected-home:hover {
   background-color: var(--brand-purple-mid);
+}
+.nav__btn--selected-projects {
+  color: var(--text-heading);
+  background-color: var(--brand-green-light);
+}
+.nav__btn--selected-projects:hover {
+  background-color: var(--brand-green-mid);
+}
+.nav__btn--selected-contact {
+  color: var(--text-heading);
+  background-color: var(--brand-orange-light);
+}
+.nav__btn--selected-contact:hover {
+  background-color: var(--brand-orange-mid);
 }
 
 .banner-project__back-btn-container {

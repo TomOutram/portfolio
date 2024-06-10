@@ -57,12 +57,28 @@
     background-color: var(--dark-grey);
   }
 
-  &--selected {
+  &--selected-home {
     color: var(--text-heading);
     background-color: var(--brand-purple-light);
     //hover
     &:hover {
       background-color: var(--brand-purple-mid);
+    }
+  }
+  &--selected-projects {
+    color: var(--text-heading);
+    background-color: var(--brand-green-light);
+    //hover
+    &:hover {
+      background-color: var(--brand-green-mid);
+    }
+  }
+  &--selected-contact {
+    color: var(--text-heading);
+    background-color: var(--brand-orange-light);
+    //hover
+    &:hover {
+      background-color: var(--brand-orange-mid);
     }
   }
 }
