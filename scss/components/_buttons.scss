@@ -34,6 +34,12 @@
       height: 1.5rem;
     }
   }
+  &--article {
+    background-color: var(--brand-blue);
+    &:hover {
+      background-color: var(--brand-blue-dark);
+    }
+  }
 }
 
 // --- NAV button
@@ -50,13 +56,10 @@
   @include abstracts.breakpointUp(large) {
     font-size: 1rem;
   }
-
-  // hover
   &:hover {
     cursor: pointer;
     background-color: var(--dark-grey);
   }
-
   &--selected-home {
     color: var(--text-heading);
     background-color: var(--brand-purple-light);
@@ -79,6 +82,14 @@
     //hover
     &:hover {
       background-color: var(--brand-orange-mid);
+    }
+  }
+  &--selected-article {
+    color: var(--text-heading);
+    background-color: var(--brand-blue-light);
+    //hover
+    &:hover {
+      background-color: var(--brand-blue-mid);
     }
   }
 }
@@ -137,7 +148,7 @@
     align-items: flex-start;
     padding: 0.75rem 1rem;
     border-radius: 0.9375rem;
-    background-color: var(--brand-purple-light);
+    background-color: var(--brand-blue-light);
     color: var(--text-grey);
     // font
     color: var(--body-typeface);
@@ -148,7 +159,7 @@
       align-items: flex-end;
     }
     &:hover {
-      background-color: var(--brand-purple-mid);
+      background-color: var(--brand-blue-mid);
     }
     @include abstracts.breakpointUp(medium) {
       font-size: 1.125rem;

@@ -27,13 +27,19 @@ L >= 1199.98px
   --brand-orange-light: #f7d4d4;
   --brand-orange-mid: #f2c0c0;
   --brand-orange-grey: #fcf5ee;
+  --brand-blue: #375bff;
+  --brand-blue-dark: #002fff;
+  --brand-blue-light: #a9efef;
+  --brand-blue-mid: #81e4e4;
+  --brand-blue-grey: #eefcfc;
+  --brand-dark-blue-grey: #cbdcdc;
   --white: #ffffff;
   --black: #000000;
   --off-white: #fafafa;
   --light-grey: #f5f5f5;
   --mid-grey: #f3f3f3;
   --dark-grey: #dedede;
-  --heading-typeface: "Sora", sans-serif;
+  --heading-typeface: "Montserrat Alternates", sans-serif;
   --body-typeface: "Inter", sans-serif;
 }
 
@@ -65,7 +71,7 @@ body {
 h1,
 h2,
 h3 {
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1.1;
   margin: 0;
   color: var(--text-heading);
@@ -416,6 +422,9 @@ main {
 .nav--contact {
   background-color: var(--brand-orange-grey);
 }
+.nav--article {
+  background-color: var(--brand-blue-grey);
+}
 
 .banner {
   margin: 0 1rem 0.5rem 1rem;
@@ -496,6 +505,10 @@ main {
   }
 }
 .banner-project__hero-banner {
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/project-bg.png");
   background-color: var(--light-grey);
   border-radius: 0.75rem;
   padding: 2rem 1rem;
@@ -815,7 +828,7 @@ main {
 .project-article__overview-table {
   font-size: 0.875rem;
   font-family: var(--body-typeface);
-  border: 1px solid var(--dark-grey);
+  border: 1px solid var(--brand-dark-blue-grey);
   margin: 0;
   padding: 0;
   border-spacing: 0;
@@ -868,10 +881,10 @@ main {
   border-top: none;
 }
 .project-article__overview-table-head {
-  background-color: var(--light-grey);
+  background-color: var(--brand-blue-grey);
   padding: 1rem;
   text-align: left;
-  border-top: 1px solid var(--dark-grey);
+  border-top: 1px solid var(--brand-dark-blue-grey);
   border-radius: 0;
   display: flex;
   justify-content: flex-start;
@@ -891,7 +904,7 @@ main {
 @media (min-width: 48em) {
   .project-article__overview-table-data {
     padding: 1.5rem 1rem 2rem 1rem;
-    border-top: 1px solid var(--dark-grey);
+    border-top: 1px solid var(--brand-dark-blue-grey);
   }
 }
 .project-article__text-block-container {
@@ -927,7 +940,7 @@ main {
   margin-bottom: 1rem;
 }
 .project-article .project-article__anchor-menu-item--selected .project-article__anchor-menu-item-cap {
-  background-color: var(--brand-purple);
+  background-color: var(--brand-blue);
 }
 .project-article__img-block {
   background-color: var(--mid-grey);
@@ -1074,6 +1087,12 @@ main {
     height: 1.5rem;
   }
 }
+.btn--article {
+  background-color: var(--brand-blue);
+}
+.btn--article:hover {
+  background-color: var(--brand-blue-dark);
+}
 
 .nav__btn {
   padding: 0.75rem 1rem;
@@ -1113,6 +1132,13 @@ main {
 }
 .nav__btn--selected-contact:hover {
   background-color: var(--brand-orange-mid);
+}
+.nav__btn--selected-article {
+  color: var(--text-heading);
+  background-color: var(--brand-blue-light);
+}
+.nav__btn--selected-article:hover {
+  background-color: var(--brand-blue-mid);
 }
 
 .banner-project__back-btn-container {
@@ -1170,7 +1196,7 @@ main {
   align-items: flex-start;
   padding: 0.75rem 1rem;
   border-radius: 0.9375rem;
-  background-color: var(--brand-purple-light);
+  background-color: var(--brand-blue-light);
   color: var(--text-grey);
   color: var(--body-typeface);
   font-family: var(--body-typeface);
@@ -1181,7 +1207,7 @@ main {
   align-items: flex-end;
 }
 .project-article__article-nav-btn:hover {
-  background-color: var(--brand-purple-mid);
+  background-color: var(--brand-blue-mid);
 }
 @media (min-width: 48em) {
   .project-article__article-nav-btn {

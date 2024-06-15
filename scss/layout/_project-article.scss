@@ -53,7 +53,7 @@
   &__overview-table {
     font-size: 0.875rem;
     font-family: var(--body-typeface);
-    border: 1px solid var(--dark-grey);
+    border: 1px solid var(--brand-dark-blue-grey);
     margin: 0;
     padding: 0;
     border-spacing: 0;
@@ -99,10 +99,10 @@
     border-top: none;
   }
   &__overview-table-head {
-    background-color: var(--light-grey);
+    background-color: var(--brand-blue-grey);
     padding: 1rem;
     text-align: left;
-    border-top: 1px solid var(--dark-grey);
+    border-top: 1px solid var(--brand-dark-blue-grey);
     border-radius: 0;
 
     display: flex;
@@ -120,7 +120,7 @@
     width: 100%;
     @include abstracts.breakpointUp(medium) {
       padding: 1.5rem 1rem 2rem 1rem;
-      border-top: 1px solid var(--dark-grey);
+      border-top: 1px solid var(--brand-dark-blue-grey);
     }
   }
   // text blocks -----------------------
@@ -151,7 +151,7 @@
   // selected cap bar visibility
   .project-article__anchor-menu-item--selected
     .project-article__anchor-menu-item-cap {
-    background-color: var(--brand-purple);
+    background-color: var(--brand-blue);
   }
   // image blocks -----------------------
   &__img-block {
