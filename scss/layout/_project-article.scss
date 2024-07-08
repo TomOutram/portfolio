@@ -99,7 +99,7 @@
     border-top: none;
   }
   &__overview-table-head {
-    background-color: var(--brand-blue-grey);
+    background-color: var(--brand-orange-grey);
     padding: 1rem;
     text-align: left;
     border-top: 1px solid var(--brand-dark-blue-grey);
@@ -151,7 +151,7 @@
   // selected cap bar visibility
   .project-article__anchor-menu-item--selected
     .project-article__anchor-menu-item-cap {
-    background-color: var(--brand-blue);
+    background-color: var(--brand-purple);
   }
   // image blocks -----------------------
   &__img-block {

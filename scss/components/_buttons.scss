@@ -34,12 +34,11 @@
       height: 1.5rem;
     }
   }
-  &--article {
-    background-color: var(--brand-blue);
-    &:hover {
-      background-color: var(--brand-blue-dark);
-    }
-  }
+}
+
+// --- link buttons
+.btn-link {
+  display: inline-flex;
 }
 
 // --- NAV button
@@ -60,36 +59,12 @@
     cursor: pointer;
     background-color: var(--dark-grey);
   }
-  &--selected-home {
+  &--selected {
     color: var(--text-heading);
     background-color: var(--brand-purple-light);
     //hover
     &:hover {
       background-color: var(--brand-purple-mid);
-    }
-  }
-  &--selected-projects {
-    color: var(--text-heading);
-    background-color: var(--brand-green-light);
-    //hover
-    &:hover {
-      background-color: var(--brand-green-mid);
-    }
-  }
-  &--selected-contact {
-    color: var(--text-heading);
-    background-color: var(--brand-orange-light);
-    //hover
-    &:hover {
-      background-color: var(--brand-orange-mid);
-    }
-  }
-  &--selected-article {
-    color: var(--text-heading);
-    background-color: var(--brand-blue-light);
-    //hover
-    &:hover {
-      background-color: var(--brand-blue-mid);
     }
   }
 }
@@ -148,7 +123,7 @@
     align-items: flex-start;
     padding: 0.75rem 1rem;
     border-radius: 0.9375rem;
-    background-color: var(--brand-blue-light);
+    background-color: var(--brand-purple-light);
     color: var(--text-grey);
     // font
     color: var(--body-typeface);
@@ -159,7 +134,7 @@
       align-items: flex-end;
     }
     &:hover {
-      background-color: var(--brand-blue-mid);
+      background-color: var(--brand-purple-mid);
     }
     @include abstracts.breakpointUp(medium) {
       font-size: 1.125rem;

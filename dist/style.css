@@ -173,33 +173,41 @@ a:active {
     font-size: 2.625rem;
   }
 }
+.projects__card-title-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 .projects__card-title {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1rem;
   font-family: var(--body-typeface);
-  margin-bottom: 0.5rem;
 }
 @media (min-width: 48em) {
   .projects__card-title {
     font-size: 1.125rem;
-    padding: 0.5rem 0.5rem 0 0.5rem;
   }
 }
 @media (min-width: 75em) {
   .projects__card-title {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
   }
+}
+.projects__card-title-dot {
+  font-size: 4rem;
+  line-height: 0;
+  color: var(--brand-purple-mid);
 }
 .projects__card-description {
   font-family: var(--body-typeface);
   color: var(--text-mid-grey);
   font-weight: 400;
   line-height: 150%;
+  margin-bottom: 1.5rem;
 }
 @media (min-width: 48em) {
   .projects__card-description {
     font-size: 0.875rem;
-    padding: 0 0.5rem;
   }
 }
 @media (min-width: 75em) {
@@ -392,6 +400,7 @@ main {
   margin-bottom: 0.5rem;
   display: flex;
   justify-content: center;
+  background-color: var(--brand-purple-grey);
 }
 .nav__container {
   margin: 0;
@@ -412,18 +421,6 @@ main {
   .nav__container {
     padding: 1rem 2rem;
   }
-}
-.nav--homepage {
-  background-color: var(--brand-purple-grey);
-}
-.nav--projects {
-  background-color: var(--brand-green-grey);
-}
-.nav--contact {
-  background-color: var(--brand-orange-grey);
-}
-.nav--article {
-  background-color: var(--brand-blue-grey);
 }
 
 .banner {
@@ -459,13 +456,13 @@ main {
   }
 }
 .banner--home {
-  background-image: url("../img/banner-homepage.png");
+  background-image: url("../img/home-banner-new.png");
 }
 .banner--projects {
-  background-image: url("../img/green-banner.png");
+  background-image: url("../img/project-new-bg.png");
 }
 .banner--contact {
-  background-image: url("../img/orange-banner.png");
+  background-image: url("../img/contact-bg.png");
 }
 .banner--projects, .banner--contact {
   margin-bottom: 2rem;
@@ -508,7 +505,7 @@ main {
   background-position-y: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/project-bg.png");
+  background-image: url("../img/project-page-bg.png");
   background-color: var(--light-grey);
   border-radius: 0.75rem;
   padding: 2rem 1rem;
@@ -636,8 +633,8 @@ main {
 @media (min-width: 75em) {
   .projects__card-row {
     flex-wrap: nowrap;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
+    gap: 2rem;
+    margin-bottom: 4rem;
   }
 }
 @media (min-width: 75em) {
@@ -647,34 +644,18 @@ main {
 }
 .projects__card {
   color: var(--black);
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-radius: 0.75rem;
-  border: 1px solid var(--dark-grey);
   width: 100%;
-}
-.projects__card:hover {
-  border-width: 2px;
-  background-color: var(--light-grey);
-  padding: 0.9375rem;
-  cursor: pointer;
-}
-.projects__card--homepage:hover {
-  background-color: var(--brand-purple-grey);
-  border-color: var(--brand-purple-dark-grey);
-}
-.projects__card--projects:hover {
-  background-color: var(--brand-green-grey);
-  border-color: var(--brand-green-dark-grey);
+  border-radius: 1rem;
+  gap: 0.75rem;
 }
 .projects__card-img {
+  transition: box-shadow 0.2s ease-in-out;
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  border: 2px solid var(--dark-grey);
-  margin-top: 2rem;
+  border-radius: 0.75rem;
   display: none;
 }
 @media (min-width: 48em) {
@@ -734,7 +715,7 @@ main {
   gap: 1rem;
   display: flex;
   align-items: center;
-  background-color: var(--brand-orange-grey);
+  background-color: var(--brand-purple-grey);
   border-radius: 0.75rem;
   margin-bottom: 1rem;
 }
@@ -881,7 +862,7 @@ main {
   border-top: none;
 }
 .project-article__overview-table-head {
-  background-color: var(--brand-blue-grey);
+  background-color: var(--brand-orange-grey);
   padding: 1rem;
   text-align: left;
   border-top: 1px solid var(--brand-dark-blue-grey);
@@ -940,7 +921,7 @@ main {
   margin-bottom: 1rem;
 }
 .project-article .project-article__anchor-menu-item--selected .project-article__anchor-menu-item-cap {
-  background-color: var(--brand-blue);
+  background-color: var(--brand-purple);
 }
 .project-article__img-block {
   background-color: var(--mid-grey);
@@ -1087,11 +1068,9 @@ main {
     height: 1.5rem;
   }
 }
-.btn--article {
-  background-color: var(--brand-blue);
-}
-.btn--article:hover {
-  background-color: var(--brand-blue-dark);
+
+.btn-link {
+  display: inline-flex;
 }
 
 .nav__btn {
@@ -1112,33 +1091,12 @@ main {
   cursor: pointer;
   background-color: var(--dark-grey);
 }
-.nav__btn--selected-home {
+.nav__btn--selected {
   color: var(--text-heading);
   background-color: var(--brand-purple-light);
 }
-.nav__btn--selected-home:hover {
+.nav__btn--selected:hover {
   background-color: var(--brand-purple-mid);
-}
-.nav__btn--selected-projects {
-  color: var(--text-heading);
-  background-color: var(--brand-green-light);
-}
-.nav__btn--selected-projects:hover {
-  background-color: var(--brand-green-mid);
-}
-.nav__btn--selected-contact {
-  color: var(--text-heading);
-  background-color: var(--brand-orange-light);
-}
-.nav__btn--selected-contact:hover {
-  background-color: var(--brand-orange-mid);
-}
-.nav__btn--selected-article {
-  color: var(--text-heading);
-  background-color: var(--brand-blue-light);
-}
-.nav__btn--selected-article:hover {
-  background-color: var(--brand-blue-mid);
 }
 
 .banner-project__back-btn-container {
@@ -1196,7 +1154,7 @@ main {
   align-items: flex-start;
   padding: 0.75rem 1rem;
   border-radius: 0.9375rem;
-  background-color: var(--brand-blue-light);
+  background-color: var(--brand-purple-light);
   color: var(--text-grey);
   color: var(--body-typeface);
   font-family: var(--body-typeface);
@@ -1207,7 +1165,7 @@ main {
   align-items: flex-end;
 }
 .project-article__article-nav-btn:hover {
-  background-color: var(--brand-blue-mid);
+  background-color: var(--brand-purple-mid);
 }
 @media (min-width: 48em) {
   .project-article__article-nav-btn {

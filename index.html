@@ -7,30 +7,22 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="dist/style.css" />
   </head>
   <body>
     <!-- nav -->
-    <nav class="nav nav--homepage">
+    <nav class="nav">
       <ul class="nav__container">
         <a href="index.html"
-          ><li class="nav__btn nav__btn--selected-home">Home</li></a
+          ><li class="nav__btn nav__btn--selected">Home</li></a
         >
         <a href="projects.html"><li class="nav__btn">Projects</li></a>
         <a href="contact.html"><li class="nav__btn">Contact</li></a>
@@ -68,62 +60,50 @@
           </div>
           <div class="projects__card-row">
             <!-- card 1 -->
-            <a
-              href="project-1.html"
-              class="projects__card projects__card--homepage"
-            >
-              <span class="projects__card-title">Design system</span>
-              <span class="projects__card-description"
-                >Some of my contributions to the Ministry of Education's design
-                system.</span
-              >
-              <img class="projects__card-img" src="img/card-test.png" />
+            <a href="project-1.html" class="projects__card">
+              <img class="projects__card-img" src="img/card-test-3.png" />
+              <div class="projects__card-title-container">
+                <span class="projects__card-title-dot">&#x2022;</span>
+                <span class="projects__card-title"
+                  >Landing page development</span
+                >
+              </div>
             </a>
             <!-- card 2 -->
-            <a
-              href="project-1.html"
-              class="projects__card projects__card--homepage"
-            >
-              <span class="projects__card-title">Landing page design</span>
-              <span class="projects__card-description"
-                >Research, design, and development of a commercial landing
-                page.</span
-              >
-              <img class="projects__card-img" src="img/card-test.png" />
+            <a href="project-1.html" class="projects__card">
+              <img class="projects__card-img" src="img/card-test-3.png" />
+              <div class="projects__card-title-container">
+                <span class="projects__card-title-dot">&#x2022;</span>
+                <span class="projects__card-title">MOE design system</span>
+              </div>
             </a>
             <!-- card 3 -->
-            <a
-              href="project-1.html"
-              class="projects__card projects__card--homepage"
-            >
-              <span class="projects__card-title">Design system</span>
-              <span class="projects__card-description"
-                >Some of my contributions to the Ministry of Education's design
-                system.</span
-              >
-              <img class="projects__card-img" src="img/card-test.png" />
+            <a href="project-1.html" class="projects__card">
+              <img class="projects__card-img" src="img/card-test-3.png" />
+              <div class="projects__card-title-container">
+                <span class="projects__card-title-dot">&#x2022;</span>
+                <span class="projects__card-title">Users & Stakeholders</span>
+              </div>
             </a>
           </div>
           <!-- cta button -->
-          <div class="projects__cta-btn-container">
-            <a href="projects.html"
-              ><button class="btn projects__cta-btn">
-                View more projects
-                <svg
-                  class="btn-arrow"
-                  width="19"
-                  height="19"
-                  viewBox="0 0 19 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.98145 18.3293L8.37832 16.7543L14.6783 10.4543H0.981445V8.20435H14.6783L8.37832 1.90435L9.98145 0.329346L18.9814 9.32935L9.98145 18.3293Z"
-                    fill="white"
-                  />
-                </svg></button
-            ></a>
-          </div>
+          <a href="projects.html" class="btn-link"
+            ><button class="btn">
+              View more projects
+              <svg
+                class="btn-arrow"
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.98145 18.3293L8.37832 16.7543L14.6783 10.4543H0.981445V8.20435H14.6783L8.37832 1.90435L9.98145 0.329346L18.9814 9.32935L9.98145 18.3293Z"
+                  fill="white"
+                />
+              </svg></button
+          ></a>
         </section>
       </main>
     </div>

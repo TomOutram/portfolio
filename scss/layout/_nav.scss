@@ -5,6 +5,7 @@
   margin-bottom: 0.5rem;
   display: flex;
   justify-content: center;
+  background-color: var(--brand-purple-grey);
   &__container {
     margin: 0;
     flex-grow: 1;
@@ -21,18 +22,5 @@
     @include abstracts.breakpointUp(large) {
       padding: 1rem 2rem;
     }
-  }
-  // nav colours
-  &--homepage {
-    background-color: var(--brand-purple-grey);
-  }
-  &--projects {
-    background-color: var(--brand-green-grey);
-  }
-  &--contact {
-    background-color: var(--brand-orange-grey);
-  }
-  &--article {
-    background-color: var(--brand-blue-grey);
   }
 }

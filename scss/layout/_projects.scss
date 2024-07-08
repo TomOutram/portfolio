@@ -36,8 +36,8 @@
     }
     @include abstracts.breakpointUp(large) {
       flex-wrap: nowrap;
-      gap: 1.5rem;
-      margin-bottom: 3rem;
+      gap: 2rem;
+      margin-bottom: 4rem;
     }
     &--project-page {
       @include abstracts.breakpointUp(large) {
@@ -49,36 +49,19 @@
   // card layout
   &__card {
     color: var(--black);
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border-radius: 0.75rem;
-    border: 1px solid var(--dark-grey);
     width: 100%;
+    border-radius: 1rem;
+    gap: 0.75rem;
 
-    &:hover {
-      border-width: 2px;
-      background-color: var(--light-grey);
-      padding: 0.9375rem;
-      cursor: pointer;
-    }
-    // card hover colours
-    &--homepage:hover {
-      background-color: var(--brand-purple-grey);
-      border-color: var(--brand-purple-dark-grey);
-    }
-    &--projects:hover {
-      background-color: var(--brand-green-grey);
-      border-color: var(--brand-green-dark-grey);
-    }
     // card image
     &-img {
+      transition: box-shadow 0.2s ease-in-out;
       width: 100%;
       height: auto;
-      border-radius: 8px;
-      border: 2px solid var(--dark-grey);
-      margin-top: 2rem;
+      border-radius: 0.75rem;
       display: none;
       @include abstracts.breakpointUp(medium) {
         display: block;
@@ -92,3 +75,16 @@
     }
   }
 }
+
+// card hover colour change
+// .projects__card:hover {
+//   border-width: 0.125rem;
+//   background-color: var(--brand-purple-grey);
+//   border-color: var(--brand-purple-dark-grey);
+//   padding: 0.9375rem;
+//   padding-top: 1.4375rem;
+// }
+
+// .projects__card:hover .projects__card-img {
+//   border-color: var(--brand-purple-dark-grey);
+// }
