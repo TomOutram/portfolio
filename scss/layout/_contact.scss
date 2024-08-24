@@ -1,31 +1,54 @@
 @use "../abstracts";
 
 .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   padding: 0 1rem;
   margin-bottom: 3rem;
   width: 100%;
   @include abstracts.breakpointUp(small) {
-    padding: 0 2rem;
     margin-bottom: 4rem;
   }
   &__details {
     padding: 1rem;
-    gap: 1rem;
+    gap: 0.75rem;
     display: flex;
     align-items: center;
     background-color: var(--brand-purple-grey);
     border-radius: 0.75rem;
-    margin-bottom: 1rem;
+    @include abstracts.breakpointUp(medium) {
+      gap: 1rem;
+    }
+    &-text {
+      font-family: var(--body-typeface);
+      font-size: 0.8125rem;
+      line-height: 1.3;
+      font-weight: 600;
+      @include abstracts.breakpointUp(small) {
+        font-size: 1rem;
+      }
+      @include abstracts.breakpointUp(medium) {
+        font-size: 1.125rem;
+      }
+      @include abstracts.breakpointUp(large) {
+        font-size: 1.375rem;
+      }
+    }
   }
   &__icon-container {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid var(--dark-grey);
     border-radius: 0.5rem;
     background-color: var(--white);
+    @include abstracts.breakpointUp(small) {
+      width: 3rem;
+      height: 3rem;
+    }
     @include abstracts.breakpointUp(medium) {
       width: 4rem;
       height: 4rem;
@@ -33,7 +56,10 @@
   }
   &__emoji {
     line-height: 1;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    @include abstracts.breakpointUp(small) {
+      font-size: 1.5rem;
+    }
     @include abstracts.breakpointUp(medium) {
       font-size: 2rem;
     }

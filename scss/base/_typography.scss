@@ -27,48 +27,6 @@ a:active {
   text-decoration: none;
 }
 
-// *** banner ***
-.banner__main-title {
-  font-size: 2rem;
-  @include abstracts.breakpointUp(small) {
-    font-size: 2.25rem;
-  }
-  @include abstracts.breakpointUp(medium) {
-    font-size: 4rem;
-  }
-  @include abstracts.breakpointUp(large) {
-    font-size: 6.25rem;
-  }
-}
-.banner__sub-title {
-  font-size: 1rem;
-  font-family: var(--body-typeface);
-  font-weight: 500;
-  color: var(--text-body);
-  @include abstracts.breakpointUp(medium) {
-    font-size: 1.125rem;
-  }
-  @include abstracts.breakpointUp(large) {
-    font-size: 2rem;
-  }
-}
-// *** homepage intro ***
-.intro__text {
-  text-align: left;
-  text-wrap: balance;
-  font-size: 0.875rem;
-  margin-bottom: 0.5rem;
-  @include abstracts.breakpointUp(small) {
-    text-align: center;
-  }
-  @include abstracts.breakpointUp(medium) {
-    font-size: 1.125rem;
-  }
-  @include abstracts.breakpointUp(large) {
-    font-size: 1.375rem;
-  }
-}
-
 // *** homepage latest projects ***
 .projects {
   &__title {
@@ -84,57 +42,6 @@ a:active {
     @include abstracts.breakpointUp(large) {
       font-size: 2.625rem;
     }
-  }
-  &__card-title-container {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  &__card-title {
-    font-weight: 500;
-    font-size: 1rem;
-    font-family: var(--body-typeface);
-    @include abstracts.breakpointUp(medium) {
-      font-size: 1.125rem;
-    }
-    @include abstracts.breakpointUp(large) {
-      font-size: 1.25rem;
-    }
-  }
-  &__card-title-dot {
-    font-size: 4rem;
-    line-height: 0;
-    color: var(--brand-purple-mid);
-  }
-  &__card-description {
-    font-family: var(--body-typeface);
-    color: var(--text-mid-grey);
-    font-weight: 400;
-    line-height: 150%;
-    margin-bottom: 1.5rem;
-    @include abstracts.breakpointUp(medium) {
-      font-size: 0.875rem;
-    }
-    @include abstracts.breakpointUp(large) {
-      font-size: 1rem;
-    }
-  }
-}
-
-// *** contacts page ***
-.contact__details-text {
-  font-family: var(--body-typeface);
-  font-size: 0.8125rem;
-  line-height: 1.3;
-  font-weight: 600;
-  @include abstracts.breakpointUp(small) {
-    font-size: 0.875rem;
-  }
-  @include abstracts.breakpointUp(medium) {
-    font-size: 1.125rem;
-  }
-  @include abstracts.breakpointUp(large) {
-    font-size: 1.375rem;
   }
 }
 

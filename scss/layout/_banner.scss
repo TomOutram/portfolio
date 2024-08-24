@@ -27,7 +27,7 @@
   }
   // banner images ------
   &--home {
-    background-image: url("../img/home-banner-new.png");
+    background-image: url("../img/home-banner-new2.png");
   }
   &--projects {
     background-image: url("../img/project-new-bg.png");
@@ -50,5 +50,30 @@
   }
   &__main-title {
     margin-bottom: 0.5rem;
+    font-size: 2.25rem;
+    @include abstracts.breakpointUp(small) {
+      font-size: 2.9rem;
+    }
+    @include abstracts.breakpointUp(medium) {
+      font-size: 4rem;
+    }
+    @include abstracts.breakpointUp(large) {
+      font-size: 6.25rem;
+    }
+  }
+  &__sub-title {
+    font-size: 1rem;
+    font-family: var(--body-typeface);
+    font-weight: 500;
+    color: var(--text-body);
+    @include abstracts.breakpointUp(small) {
+      font-size: 1.125rem;
+    }
+    @include abstracts.breakpointUp(medium) {
+      font-size: 1.75rem;
+    }
+    @include abstracts.breakpointUp(large) {
+      font-size: 2rem;
+    }
   }
 }
