@@ -15,13 +15,16 @@ function promteToLightbox(image) {
   // disable scroll
   document.body.style.overflow = "hidden";
 
-  // adjust body padding
+  // adjust body padding for buttons
   document.body.style.paddingRight = "15px";
 
   // create lightBox element
   let lightBox = document.createElement("div");
   lightBox.className = "lightBox";
   document.body.appendChild(lightBox);
+  lightBox.addEventListener("click", (e) => {
+    zoomOrClose(e);
+  });
 
   // create close button
   let lightBoxCloseBtn = document.createElement("div");
@@ -31,25 +34,54 @@ function promteToLightbox(image) {
 </svg>`;
   lightBox.appendChild(lightBoxCloseBtn);
 
-  // create ligthbox img element
+  // create lightbox img element
   let lightBoxImg = document.createElement("img");
   lightBoxImg.className = "lightBoxImg";
   lightBoxImg.src = image.src;
   lightBox.appendChild(lightBoxImg);
-  lightBox.addEventListener("click", (e) => {
-    closeLightBox(e);
-  });
+  // lightBox.addEventListener("click", (e) => {
+  //   closeLightBox(e);
+  // });
 }
 
-// function to remove lightbox
-function closeLightBox(e) {
-  if (!e.target.classList.contains("lightBoxImg")) {
-    let lightBox = document.querySelector(".lightBox");
-    lightBox.remove();
+// // function to remove lightbox
+// function closeLightBox(e) {
+//   if (!e.target.classList.contains("lightBoxImg")) {
+//     let lightBox = document.querySelector(".lightBox");
+//     lightBox.remove();
 
+//     // enable scroll
+//     document.body.style.overflow = "auto";
+
+//     // adjust body padding
+//     document.body.style.paddingRight = "0";
+//   }
+// }
+
+// function to either:
+// - zoom into the img (if the image is clicked)
+// - OR close the lightbox (if any other area of the lightbox is clicked)
+function zoomOrClose(e) {
+  // get lightbox and lightbox img
+  let lightBox = document.querySelector(".lightBox");
+  let lightBoxImg = document.querySelector(".lightBoxImg");
+
+  if (e.target.classList.contains("lightBoxImg")) {
+    // style lightbox
+    lightBox.style.overflow = "auto";
+    lightBox.style.alignItems = "safe center";
+    lightBox.style.justifyContent = "safe center";
+
+    // style lightbox img
+    lightBoxImg.style.width = "auto";
+    lightBoxImg.style.height = "auto";
+    lightBoxImg.style.maxWidth = "none";
+    lightBoxImg.style.maxHeight = "none";
+  } else {
+    // remove lightbox - back to page
+    lightBox.remove();
     // enable scroll
     document.body.style.overflow = "auto";
-
     // adjust body padding
     document.body.style.paddingRight = "0";
   }
