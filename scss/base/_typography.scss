@@ -27,24 +27,6 @@ a:active {
   text-decoration: none;
 }
 
-// *** homepage latest projects ***
-.projects {
-  &__title {
-    font-weight: 700;
-    font-size: 1.5rem;
-    font-family: var(--body-typeface);
-    @include abstracts.breakpointUp(small) {
-      font-size: 1.625rem;
-    }
-    @include abstracts.breakpointUp(medium) {
-      font-size: 2rem;
-    }
-    @include abstracts.breakpointUp(large) {
-      font-size: 2.625rem;
-    }
-  }
-}
-
 // *** project page ***
 .banner-project {
   &__title {

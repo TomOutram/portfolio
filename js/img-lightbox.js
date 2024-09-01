@@ -15,7 +15,9 @@ allImages.forEach((image) => {
   });
 });
 
+// ----------------------------------------------------------------------
 // function to create lightbox
+// ----------------------------------------------------------------------
 function promteToLightbox(image, isLarge) {
   // disable scroll
   document.body.style.overflow = "hidden";
@@ -26,11 +28,10 @@ function promteToLightbox(image, isLarge) {
   // create lightBox element
   let lightBox = document.createElement("div");
   lightBox.className = "lightBox";
-  // if large, add large class ----------------
+  // if large, add large class
   if (isLarge) {
     lightBox.classList.add("lightBox--large");
   }
-  // -------------------------------------------
   document.body.appendChild(lightBox);
   lightBox.addEventListener("click", (e) => {
     zoomOrClose(e);
@@ -60,27 +61,27 @@ function promteToLightbox(image, isLarge) {
   // create lightbox img element
   let lightBoxImg = document.createElement("img");
   lightBoxImg.className = "lightBoxImg";
-  // if large, add large class ----------------
+  // if large, add large class
   if (isLarge) {
     lightBoxImg.classList.add("lightBoxImg--large");
   }
-  // -------------------------------------------
   lightBoxImg.src = image.src;
   lightBox.appendChild(lightBoxImg);
 }
 
+// ----------------------------------------------------------------------
 // function to either:
-// - zoom into the img (if the image is clicked)
+// - zoom into the img (if the image or zoom btn are clicked)
 // - OR close the lightbox (if any other area of the lightbox is clicked)
+// ----------------------------------------------------------------------
 function zoomOrClose(e) {
   // get lightbox and lightbox img
   let lightBox = document.querySelector(".lightBox");
   let lightBoxImg = document.querySelector(".lightBoxImg");
   let zoomBtn = document.querySelector(".lightBoxZoomBtn");
 
-  console.log(e.target);
-
   if (
+    // if image or zoom button have not been clicked
     !(
       e.target.classList.contains("lightBoxImg") ||
       e.target.classList.contains("lightBoxZoomBtn") ||
@@ -95,7 +96,8 @@ function zoomOrClose(e) {
     // adjust body padding
     document.body.style.paddingRight = "0";
   } else {
-    // if img is large, toggle 'zoomed' class to zoom in
+    // if img or zoom btn are clicked
+    // AND if img is large, toggle 'zoomed' class to zoom in
     if (lightBoxImg.classList.contains("lightBoxImg--large")) {
       lightBox.classList.toggle("lightBox--zoomed");
       lightBoxImg.classList.toggle("lightBoxImg--zoomed");
