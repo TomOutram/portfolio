@@ -999,31 +999,100 @@ main {
   justify-content: center;
   align-items: center;
 }
+.lightBox--zoomed {
+  overflow: auto;
+  align-items: safe center;
+  justify-content: safe center;
+}
 
 .lightBoxImg {
   max-height: 100vh;
   max-width: 100vw;
 }
-
-.lightBoxImg:hover {
-  cursor: zoom-in;
+@media (min-width: 64rem) {
+  .lightBoxImg--zoomed {
+    width: auto;
+    height: auto;
+    max-width: 64rem;
+    max-height: none;
+  }
+}
+@media (min-width: 75em) {
+  .lightBoxImg--zoomed {
+    width: auto;
+    height: auto;
+    max-width: 75rem;
+    max-height: none;
+  }
 }
 
-.lightBoxCloseBtn {
+.lightBoxImg--large:hover {
+  cursor: auto;
+}
+@media (min-width: 64rem) {
+  .lightBoxImg--large:hover {
+    cursor: zoom-in;
+  }
+}
+
+.lightBoxImg--large.lightBoxImg--zoomed:hover {
+  cursor: auto;
+}
+@media (min-width: 64rem) {
+  .lightBoxImg--large.lightBoxImg--zoomed:hover {
+    cursor: zoom-out;
+  }
+}
+
+.lightBoxBtn {
   width: 2.5rem;
   height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 4rem;
-  background-color: var(--text-grey);
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.lightBoxBtn:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+.lightBoxBtn:hover .lightBoxBtn-icon {
+  fill: #1f1f1f;
+}
+
+.lightBoxCloseBtn {
   top: 1rem;
   right: 2rem;
   position: fixed;
 }
-.lightBoxCloseBtn:hover {
-  cursor: pointer;
-  background-color: var(--text-mid-grey);
+
+.lightBoxZoomBtn {
+  display: none;
+  top: 1rem;
+  right: 5rem;
+  position: fixed;
+}
+@media (min-width: 64rem) {
+  .lightBoxZoomBtn {
+    display: flex;
+  }
+}
+
+.lightBoxZoomBtn .lightBoxBtn-icon__zoom-in {
+  display: block;
+}
+
+.lightBoxZoomBtn .lightBoxBtn-icon__zoom-out {
+  display: none;
+}
+
+.lightBoxZoomBtn--zoomed .lightBoxBtn-icon__zoom-in {
+  display: none;
+}
+
+.lightBoxZoomBtn--zoomed .lightBoxBtn-icon__zoom-out {
+  display: block;
 }
 
 .btn {
