@@ -246,12 +246,12 @@
       cursor: pointer;
     }
     &:not(:first-of-type) {
-      margin-top: 1rem;
+      margin-top: 1.25rem;
       @include abstracts.breakpointUp(small) {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
       }
       @include abstracts.breakpointUp(large) {
-        margin-top: 2.5rem;
+        margin-top: 2rem;
       }
     }
     @include abstracts.breakpointUp(small) {
@@ -263,17 +263,18 @@
   }
   &__img-block-caption {
     font-family: var(--body-typeface);
-    font-size: 0.6875rem;
-    color: var(--text-body);
+    font-size: 0.875rem;
+    color: var(--text-grey);
     line-height: 1rem;
     margin-top: 0.5rem;
+    text-align: center;
     @include abstracts.breakpointUp(small) {
-      font-size: 0.875rem;
+      font-size: 1rem;
       margin-top: 0.75rem;
     }
     @include abstracts.breakpointUp(large) {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.125rem;
+      //margin-bottom: 0.5rem;
     }
   }
   // next / back buttons -----------------------

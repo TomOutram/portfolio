@@ -1,7 +1,7 @@
 /* 
 --------- breakpoints UP
-S >= 415px
-M >= 768px 
+S >= 426px
+M >= 769px 
 L >= 1200px
 --------- breakpoints DOWN
 S >= 414.98px
@@ -10,9 +10,9 @@ L >= 1199.98px
 */
 
 $breakpoints-up: (
-  "small": 25.9375em,
-  "medium": 48em,
-  "large": 75em,
+  "small": 26.625em,
+  "medium": 48.0625em,
+  "large": 75.0625em,
   "img-large-zoom": 64rem,
   "tablet-cards": 40rem,
 );
