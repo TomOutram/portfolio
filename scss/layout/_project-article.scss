@@ -31,13 +31,13 @@
     margin-bottom: 3rem;
   }
   &__anchor-menu-title {
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     font-family: var(--body-typeface);
-    font-weight: 600;
+    font-weight: 500;
     color: var(--text-grey);
     margin: 0 0 1rem 0.75rem;
     @include abstracts.breakpointUp(medium) {
-      font-size: 0.9375rem;
+      font-size: 0.8125rem;
     }
   }
   &__anchor-menu-list {
@@ -51,33 +51,46 @@
     font-size: 0.9375rem;
     font-family: var(--body-typeface);
     font-weight: 500;
-    color: var(--text-light-grey);
+    color: var(--text-grey);
+    font-weight: 600;
     transition: color 0.1s ease;
+    gap: 0.5rem;
+    max-width: 16em;
     @include abstracts.breakpointUp(medium) {
       font-size: 1rem;
     }
+    @include abstracts.breakpointUp(large) {
+      color: var(--text-light-grey);
+      &:hover {
+        color: var(--text-grey);
+      }
+      &--selected {
+        color: var(--text-grey);
+      }
+    }
     &:hover {
       cursor: pointer;
-      color: var(--text-grey);
-    }
-    &--selected {
-      color: var(--text-grey);
-      margin-bottom: 1rem;
-      font-weight: 800;
     }
   }
   &__anchor-menu-item-cap {
-    margin-right: 0.5rem;
     width: 0.25rem;
     background-color: transparent;
     border-radius: 1rem;
     transition: background-color 0.2s ease;
+    flex-shrink: 0;
+  }
+  // selected cap bar visibility
+  .project-article__anchor-menu-item--selected
+    .project-article__anchor-menu-item-cap {
+    @include abstracts.breakpointUp(large) {
+      background-color: var(--brand-purple);
+    }
   }
   // overview table -----------------------
   &__overview-table {
     font-size: 0.875rem;
     font-family: var(--body-typeface);
-    border: 1px solid var(--brand-dark-blue-grey);
+    border: 2px solid var(--brand-dark-blue-grey);
     margin: 0;
     padding: 0;
     border-spacing: 0;
@@ -125,7 +138,7 @@
     background-color: var(--brand-purple-grey);
     padding: 1rem;
     text-align: left;
-    border-top: 1px solid var(--brand-dark-blue-grey);
+    border-top: 2px solid var(--brand-dark-blue-grey);
     border-radius: 0;
 
     display: flex;
@@ -143,7 +156,7 @@
     width: 100%;
     @include abstracts.breakpointUp(medium) {
       padding: 1.5rem 1rem 2rem 1rem;
-      border-top: 1px solid var(--brand-dark-blue-grey);
+      border-top: 2px solid var(--brand-dark-blue-grey);
     }
   }
   // text blocks -----------------------
@@ -218,11 +231,6 @@
       margin: 2.5rem 0;
     }
   }
-  // selected cap bar visibility
-  .project-article__anchor-menu-item--selected
-    .project-article__anchor-menu-item-cap {
-    background-color: var(--brand-purple);
-  }
   // image blocks -----------------------
   &__img-block {
     background-color: var(--mid-grey);
@@ -285,7 +293,7 @@
     justify-content: flex-start;
     margin-bottom: 3rem;
     gap: 0.5rem;
-    @include abstracts.breakpointUp(small) {
+    @include abstracts.breakpointUp(back-next-btns) {
       flex-direction: row;
     }
   }
@@ -302,16 +310,13 @@
     // font
     color: var(--body-typeface);
     font-family: var(--body-typeface);
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 600;
-    &--next {
-      align-items: flex-end;
-    }
     &:hover {
       background-color: var(--brand-purple-mid);
     }
     @include abstracts.breakpointUp(medium) {
-      font-size: 1.125rem;
+      font-size: 1.5rem;
       padding: 1.125rem 1.5rem;
     }
   }
@@ -319,11 +324,11 @@
     display: flex;
     align-items: center;
     gap: 0.25rem;
-    font-size: 0.6875rem;
+    font-size: 0.875rem;
     font-weight: 500;
     color: var(--text-grey);
     @include abstracts.breakpointUp(medium) {
-      font-size: 0.875rem;
+      font-size: 1rem;
     }
   }
   &__article-nav-btn-next-arrow {
@@ -332,8 +337,8 @@
   &__article-nav-btn-prev-arrow,
   &__article-nav-btn-next-arrow {
     @include abstracts.breakpointUp(medium) {
-      width: 18px;
-      height: 18px;
+      width: 24px;
+      height: 24px;
     }
   }
 }

@@ -748,15 +748,15 @@ main {
   margin-bottom: 3rem;
 }
 .project-article__anchor-menu-title {
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   font-family: var(--body-typeface);
-  font-weight: 600;
+  font-weight: 500;
   color: var(--text-grey);
   margin: 0 0 1rem 0.75rem;
 }
 @media (min-width: 48.0625em) {
   .project-article__anchor-menu-title {
-    font-size: 0.9375rem;
+    font-size: 0.8125rem;
   }
 }
 .project-article__anchor-menu-list {
@@ -770,34 +770,47 @@ main {
   font-size: 0.9375rem;
   font-family: var(--body-typeface);
   font-weight: 500;
-  color: var(--text-light-grey);
+  color: var(--text-grey);
+  font-weight: 600;
   transition: color 0.1s ease;
+  gap: 0.5rem;
+  max-width: 16em;
 }
 @media (min-width: 48.0625em) {
   .project-article__anchor-menu-item {
     font-size: 1rem;
   }
 }
+@media (min-width: 75.0625em) {
+  .project-article__anchor-menu-item {
+    color: var(--text-light-grey);
+  }
+  .project-article__anchor-menu-item:hover {
+    color: var(--text-grey);
+  }
+  .project-article__anchor-menu-item--selected {
+    color: var(--text-grey);
+  }
+}
 .project-article__anchor-menu-item:hover {
   cursor: pointer;
-  color: var(--text-grey);
-}
-.project-article__anchor-menu-item--selected {
-  color: var(--text-grey);
-  margin-bottom: 1rem;
-  font-weight: 800;
 }
 .project-article__anchor-menu-item-cap {
-  margin-right: 0.5rem;
   width: 0.25rem;
   background-color: transparent;
   border-radius: 1rem;
   transition: background-color 0.2s ease;
+  flex-shrink: 0;
+}
+@media (min-width: 75.0625em) {
+  .project-article .project-article__anchor-menu-item--selected .project-article__anchor-menu-item-cap {
+    background-color: var(--brand-purple);
+  }
 }
 .project-article__overview-table {
   font-size: 0.875rem;
   font-family: var(--body-typeface);
-  border: 1px solid var(--brand-dark-blue-grey);
+  border: 2px solid var(--brand-dark-blue-grey);
   margin: 0;
   padding: 0;
   border-spacing: 0;
@@ -853,7 +866,7 @@ main {
   background-color: var(--brand-purple-grey);
   padding: 1rem;
   text-align: left;
-  border-top: 1px solid var(--brand-dark-blue-grey);
+  border-top: 2px solid var(--brand-dark-blue-grey);
   border-radius: 0;
   display: flex;
   justify-content: flex-start;
@@ -873,7 +886,7 @@ main {
 @media (min-width: 48.0625em) {
   .project-article__overview-table-data {
     padding: 1.5rem 1rem 2rem 1rem;
-    border-top: 1px solid var(--brand-dark-blue-grey);
+    border-top: 2px solid var(--brand-dark-blue-grey);
   }
 }
 .project-article__text-block-container {
@@ -968,9 +981,6 @@ main {
     margin: 2.5rem 0;
   }
 }
-.project-article .project-article__anchor-menu-item--selected .project-article__anchor-menu-item-cap {
-  background-color: var(--brand-purple);
-}
 .project-article__img-block {
   background-color: var(--mid-grey);
   padding: 0.5rem;
@@ -1047,7 +1057,7 @@ main {
   margin-bottom: 3rem;
   gap: 0.5rem;
 }
-@media (min-width: 26.625em) {
+@media (min-width: 31.25rem) {
   .project-article__article-nav-container {
     flex-direction: row;
   }
@@ -1064,18 +1074,15 @@ main {
   color: var(--text-grey);
   color: var(--body-typeface);
   font-family: var(--body-typeface);
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
-}
-.project-article__article-nav-btn--next {
-  align-items: flex-end;
 }
 .project-article__article-nav-btn:hover {
   background-color: var(--brand-purple-mid);
 }
 @media (min-width: 48.0625em) {
   .project-article__article-nav-btn {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     padding: 1.125rem 1.5rem;
   }
 }
@@ -1083,13 +1090,13 @@ main {
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  font-size: 0.6875rem;
+  font-size: 0.875rem;
   font-weight: 500;
   color: var(--text-grey);
 }
 @media (min-width: 48.0625em) {
   .project-article__prev-next-container {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 .project-article__article-nav-btn-next-arrow {
@@ -1097,8 +1104,8 @@ main {
 }
 @media (min-width: 48.0625em) {
   .project-article__article-nav-btn-prev-arrow, .project-article__article-nav-btn-next-arrow {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
   }
 }
 
