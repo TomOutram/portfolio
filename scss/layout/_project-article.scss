@@ -90,7 +90,7 @@
   &__overview-table {
     font-size: 0.875rem;
     font-family: var(--body-typeface);
-    border: 2px solid var(--brand-dark-blue-grey);
+    border: 2px solid var(--brand-purple-dark-grey);
     margin: 0;
     padding: 0;
     border-spacing: 0;
@@ -138,7 +138,7 @@
     background-color: var(--brand-purple-grey);
     padding: 1rem;
     text-align: left;
-    border-top: 2px solid var(--brand-dark-blue-grey);
+    border-top: 2px solid var(--brand-purple-dark-grey);
     border-radius: 0;
 
     display: flex;
@@ -156,7 +156,7 @@
     width: 100%;
     @include abstracts.breakpointUp(medium) {
       padding: 1.5rem 1rem 2rem 1rem;
-      border-top: 2px solid var(--brand-dark-blue-grey);
+      border-top: 2px solid var(--brand-purple-dark-grey);
     }
   }
   // text blocks -----------------------
