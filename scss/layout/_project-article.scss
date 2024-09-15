@@ -221,14 +221,17 @@
   }
   &__ul {
     padding-left: 1rem;
-    margin: 1.5rem 0;
+    //margin: 1.5rem 0;
     @include abstracts.breakpointUp(medium) {
       padding-left: 1.25rem;
-      margin: 2rem 0;
+      //margin: 2rem 0;
     }
     @include abstracts.breakpointUp(large) {
       padding-left: 1.5rem;
-      margin: 2.5rem 0;
+      //margin: 2.5rem 0;
+    }
+    & li {
+      margin-bottom: 0.5rem;
     }
   }
   // image blocks -----------------------

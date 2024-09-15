@@ -954,19 +954,19 @@ main {
 }
 .project-article__ul {
   padding-left: 1rem;
-  margin: 1.5rem 0;
 }
 @media (min-width: 48.0625em) {
   .project-article__ul {
     padding-left: 1.25rem;
-    margin: 2rem 0;
   }
 }
 @media (min-width: 75.0625em) {
   .project-article__ul {
     padding-left: 1.5rem;
-    margin: 2.5rem 0;
   }
+}
+.project-article__ul li {
+  margin-bottom: 0.5rem;
 }
 .project-article__img-block {
   background-color: var(--mid-grey);
