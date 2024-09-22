@@ -188,6 +188,7 @@
     color: var(--text-body);
     letter-spacing: 0.06rem;
     line-height: 1.95rem;
+    margin-bottom: 1rem;
     @include abstracts.breakpointUp(small) {
       font-size: 1.625rem;
     }
@@ -195,11 +196,8 @@
       font-size: 2rem;
     }
     @include abstracts.breakpointUp(large) {
-      font-size: 2.625rem;
-    }
-    margin-bottom: 1rem;
-    @include abstracts.breakpointUp(large) {
-      margin-bottom: 2rem;
+      font-size: 2.375rem;
+      margin-bottom: 1.5rem;
     }
   }
   // article paragraphs
