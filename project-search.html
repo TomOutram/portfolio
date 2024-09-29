@@ -69,6 +69,7 @@
                 On this page:
               </div>
               <ul class="project-article__anchor-menu-list">
+                <!-- 0. Overview -->
                 <li
                   data-anchor-link="textBlock-0"
                   class="project-article__anchor-menu-item project-article__anchor-menu-item--selected"
@@ -78,6 +79,7 @@
                   ></div>
                   Overview
                 </li>
+                <!-- 1. Challenges -->
                 <li
                   data-anchor-link="textBlock-1"
                   class="project-article__anchor-menu-item"
@@ -87,6 +89,7 @@
                   ></div>
                   Challenges
                 </li>
+                <!-- 2. Taxonomy and tags -->
                 <li
                   data-anchor-link="textBlock-2"
                   class="project-article__anchor-menu-item"
@@ -94,54 +97,29 @@
                   <div class="project-article__anchor-menu-item-cap"></div>
                   Taxonomy and tags
                 </li>
+                <!-- 3. Search results -->
                 <li
                   data-anchor-link="textBlock-3"
                   class="project-article__anchor-menu-item"
                 >
                   <div class="project-article__anchor-menu-item-cap"></div>
-                  Breadcrumbs
+                  Search results
                 </li>
+                <!-- 4. Search filters -->
                 <li
                   data-anchor-link="textBlock-4"
                   class="project-article__anchor-menu-item"
                 >
                   <div class="project-article__anchor-menu-item-cap"></div>
-                  Design iterations
+                  Search filters
                 </li>
+                <!-- 5. Usability testing -->
                 <li
                   data-anchor-link="textBlock-5"
                   class="project-article__anchor-menu-item"
                 >
                   <div class="project-article__anchor-menu-item-cap"></div>
                   Usability testing
-                </li>
-                <li
-                  data-anchor-link="textBlock-6"
-                  class="project-article__anchor-menu-item"
-                >
-                  <div class="project-article__anchor-menu-item-cap"></div>
-                  Updating the designs
-                </li>
-                <li
-                  data-anchor-link="textBlock-7"
-                  class="project-article__anchor-menu-item"
-                >
-                  <div class="project-article__anchor-menu-item-cap"></div>
-                  Section templates
-                </li>
-                <li
-                  data-anchor-link="textBlock-8"
-                  class="project-article__anchor-menu-item"
-                >
-                  <div class="project-article__anchor-menu-item-cap"></div>
-                  Modular forms
-                </li>
-                <li
-                  data-anchor-link="textBlock-9"
-                  class="project-article__anchor-menu-item"
-                >
-                  <div class="project-article__anchor-menu-item-cap"></div>
-                  Summary
                 </li>
               </ul>
             </div>
@@ -267,39 +245,14 @@
                 </li>
               </ul>
             </div>
-            <!-- text block 3 - Breadcrumbs -->
+            <!-- text block 3 - Search results -->
             <div id="textBlock-3" class="project-article__text-block">
-              <h2 class="project-article__h2-title">Breadcrumbs</h2>
-              <!-- img - PDF upload -->
-              <div class="project-article__img-block">
-                <img
-                  class="project-article__img-block-image img--large"
-                  src="img/case-study-WS-001.png"
-                  alt="Design mockup of an online form that allows users to submit a PDF notification to WorkSafe"
-                />
-                <div class="project-article__img-block-caption">
-                  Form allowing users to submit a PDF notification online
-                </div>
-              </div>
-              <p class="project-article__paragraph">
-                Displayed next to the search 'type', is a breadcrumb navigation
-                pathway. This helps users determine the location of the page in
-                relation to parent pages in the site's hierarchy of information.
-              </p>
-              <p class="project-article__paragraph">
-                The team used the search types and breadcrumbs to index and rank
-                results. The goal was to provide results to users that are as
-                relevant as possilbe.
-              </p>
-            </div>
-            <!-- text block 4 - Working designs -->
-            <div id="textBlock-4" class="project-article__text-block">
-              <h2 class="project-article__h2-title">Design iterations</h2>
-              <!-- img - extractives form -->
+              <h2 class="project-article__h2-title">Search results</h2>
+              <!-- images -->
               <div class="project-article__img-block">
                 <img
                   class="project-article__img-block-image"
-                  src="img/case-study-SEARCH-002.png"
+                  src="img/case-study-SEARCH-006.png"
                   alt="Several design mockups of search results featuring links, descriptions, and meta data for the search items."
                 />
                 <div class="project-article__img-block-caption">
@@ -307,27 +260,71 @@
                 </div>
                 <img
                   class="project-article__img-block-image"
-                  src="img/case-study-SEARCH-003.png"
-                  alt="Several design mockups of search filters for the various page, document, and media types."
+                  src="img/case-study-SEARCH-002.png"
+                  alt="Several design mockups of search results for pdfs and other documents."
                 />
                 <div class="project-article__img-block-caption">
-                  'Type filter' design iterations
+                  Design iterations for a documents search
                 </div>
               </div>
               <p class="project-article__paragraph">
-                Initial designs were created for both the search results page
-                and the filters. I iterated over these designs multiple times.
+                I had to create search results that would work for pages,
+                downloadable documents, media items, and other entities. I
+                iterated over several designs, working toward some of the
+                following design decisions:
               </p>
+              <ul class="project-article__ul">
+                <li>
+                  <strong>Scanability</strong> - I made the titles the most
+                  prominent element of the component so users could visully
+                  bounce between them as they scanned the results. I used
+                  thumbnails and icons to help make the document and media
+                  results visually distinct.
+                </li>
+                <li>
+                  <strong>Meta data</strong> - I iterated over different
+                  variations to create a balance between the amount of info
+                  displayed and the readability of the components. I didn't want
+                  to overwhelm users with details.
+                </li>
+                <li>
+                  <strong>Interaction</strong> - Users should intuitively know
+                  where to click to select a result. I used our design system's
+                  'interactive' blue for headings and downloads with a colour
+                  change and underline on-hover to indicate interactivity.
+                </li>
+                <li>
+                  <strong>Navigation</strong> - I included a breadcrumb pathway
+                  to help users understand the location of the page in relation
+                  to parent pages in the site's hierarchy of information.
+                </li>
+              </ul>
+            </div>
+            <!-- text block 4 - Search filters -->
+            <div id="textBlock-4" class="project-article__text-block">
+              <h2 class="project-article__h2-title">Search filters</h2>
+              <!-- img - extractives form -->
+              <div class="project-article__img-block">
+                <img
+                  class="project-article__img-block-image"
+                  src="img/case-study-SEARCH-007.png"
+                  alt="Several design mockups of search filters for the various page, document, and media types."
+                />
+                <div class="project-article__img-block-caption">
+                  Design iterations for the search filters.
+                </div>
+                <img
+                  class="project-article__img-block-image"
+                  src="img/case-study-SEARCH-003.png"
+                  alt="User interface for the hierarical page, document, and media filters."
+                />
+                <div class="project-article__img-block-caption">
+                  Visual iterations of the hierarchical 'type' filters.
+                </div>
+              </div>
               <p class="project-article__paragraph">
-                Both of these components needed to accomodate the different
-                search types. I had to display different data for pages,
-                downloadable documents, media items, and other entities.
-              </p>
-              <p class="project-article__paragraph">
-                Some of the result page designs began to get busy and
-                complicated. I needed to create a balance between the amount of
-                info displayed, and the readability of the components. I didn't
-                want to overwhelm users with details.
+                Allow user to filter - key words - in conjunction with types -
+                date - audiences
               </p>
             </div>
             <!-- text block 5 - Usability testing -->
@@ -386,132 +383,6 @@
                   decisions for the project or even futrue projects.
                 </li>
               </ul>
-            </div>
-            <!-- text block 6 - Updating the designs -->
-            <div id="textBlock-6" class="project-article__text-block">
-              <h2 class="project-article__h2-title">Updating the designs</h2>
-              <!-- img - single entry point -->
-              <div class="project-article__img-block">
-                <img
-                  class="project-article__img-block-image"
-                  src="img/case-study-WS-005.png"
-                  alt="screenshots of the WorkSafe website depicting various links to application forms"
-                />
-                <div class="project-article__img-block-caption">
-                  Multiple entry points across the WorkSafe website
-                </div>
-                <img
-                  class="project-article__img-block-image"
-                  src="img/case-study-WS-004.png"
-                  alt="Design mockup of a page that allows users to select from all available application types"
-                />
-                <div class="project-article__img-block-caption">
-                  New design for a single entry point
-                </div>
-              </div>
-              <p class="project-article__paragraph">
-                As we delivered the first sets of forms, we began to notice
-                repetition and room to be more efficient in our approach.
-              </p>
-              <p class="project-article__paragraph">
-                Each application form had its own link or section on the
-                WorkSafe website. We wanted to create a single, unified entry
-                point for users. From this page, users could choose the
-                cateogory and type of service they wanted to access.
-              </p>
-            </div>
-            <!-- text block 7 - xxx -->
-            <div id="textBlock-7" class="project-article__text-block">
-              <h2 class="project-article__h2-title">Section templates</h2>
-              <!-- img - single entry point -->
-              <div class="project-article__img-block">
-                <img
-                  class="project-article__img-block-image"
-                  src="img/case-study-WS-006.png"
-                  alt="Design mockup of a reusable form template"
-                />
-                <div class="project-article__img-block-caption">
-                  Reusable section template
-                </div>
-              </div>
-              <p class="project-article__paragraph">
-                Another issue was the duplication of sections across multiple
-                forms. For example, many forms included a 'Personal details'
-                section, each with only minor differences.
-              </p>
-              <p class="project-article__paragraph">
-                Because these sections were so similar, we were basically
-                building the same section across dozens of forms (a lot of
-                repeated work).
-              </p>
-              <p class="project-article__paragraph">
-                Whenever we recognised similar sections across the forms, we
-                created generic templates. These 'white label' sections can be
-                dynamically populated with different titles and details. This
-                allowed us to reuse them multiple times.
-              </p>
-            </div>
-            <!-- text block 8 - xxx -->
-            <div id="textBlock-8" class="project-article__text-block">
-              <h2 class="project-article__h2-title">Modular forms</h2>
-              <!-- img - single entry point -->
-              <div class="project-article__img-block">
-                <img
-                  class="project-article__img-block-image img--large"
-                  src="img/case-study-WS-007.png"
-                  alt="Design mockup of a form built using modular sections"
-                />
-                <div class="project-article__img-block-caption">
-                  Modular form built using section templates
-                </div>
-                <img
-                  class="project-article__img-block-image"
-                  src="img/case-study-WS-008.png"
-                  alt="Diagram of three modular forms. Different sections of each form is pointing to the same section template"
-                />
-                <div class="project-article__img-block-caption">
-                  Three modular forms referencing the same section template
-                </div>
-              </div>
-              <p class="project-article__paragraph">
-                Building on the concept of section templates, we created
-                'Modular forms'. Each step in these forms points to a
-                self-contained section template.
-              </p>
-              <p class="project-article__paragraph">
-                This allowed us to slot in section templates like lego bricks.
-                We could mix and match previously built sections, rearranging
-                the order if we needed to.
-              </p>
-              <p class="project-article__paragraph">
-                If a form required a new or unique section, it was easy to build
-                a new template and slot it in at any stage. Any new templates
-                could then be reused in other modular forms too.
-              </p>
-            </div>
-            <!-- text block 9 - Summary -->
-            <div id="textBlock-9" class="project-article__text-block">
-              <h2 class="project-article__h2-title">Summary</h2>
-              <p class="project-article__paragraph">
-                <strong>Outcomes</strong> - Our modular system was a lot of work
-                upfront, but it streamlined the process for subsequent WorkSafe
-                regimes. It allowed us to focus on new issues, rather than
-                solving the same problem over and over again.
-              </p>
-              <p class="project-article__paragraph">
-                <strong>What did I learn?</strong> - Sometimes you need to pivot
-                during a project. The right approach might not be obvious at the
-                outset. I'm glad my team had the confidence to make adjustments
-                early, rather than committing to the "sunk cost" of work
-                completed to that point.
-              </p>
-              <p class="project-article__paragraph">
-                <strong>Next steps</strong> - The next phase of the project
-                involved creating a more complete self-service experience for
-                WorkSafe users. We planned to create a dashboard where users
-                could manage their certifications, store documents, and receive
-                communications from WorkSafe.
-              </p>
             </div>
 
             <!-- previous / next buttons -->
