@@ -328,6 +328,9 @@
     @include abstracts.breakpointUp(medium) {
       font-size: 1.5rem;
       padding: 1.125rem 1.5rem;
+      &--last {
+        width: 50%;
+      }
     }
   }
   &__prev-next-container {

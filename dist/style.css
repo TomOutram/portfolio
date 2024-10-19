@@ -1082,6 +1082,9 @@ main {
     font-size: 1.5rem;
     padding: 1.125rem 1.5rem;
   }
+  .project-article__article-nav-btn--last {
+    width: 50%;
+  }
 }
 .project-article__prev-next-container {
   display: flex;
