@@ -4,6 +4,9 @@
   padding: 0 1rem;
   width: 100%;
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   @include abstracts.breakpointUp(large) {
     margin-bottom: 4.5rem;
   }
@@ -17,8 +20,32 @@
       padding-bottom: 1.5rem;
     }
     @include abstracts.breakpointUp(large) {
-      padding: 3rem 2rem;
-      padding-bottom: 2.5rem;
+      padding: 2.5rem;
+    }
+  }
+  &__skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    @include abstracts.breakpointUp(medium) {
+      flex-direction: row;
+    }
+  }
+  &__skill {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    gap: 1.125rem;
+
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+
+    background-color: var(--brand-purple-grey);
+    border-radius: 0.75rem;
+    @include abstracts.breakpointUp(medium) {
+      padding: 2rem;
+      padding-bottom: 1.5rem;
     }
   }
   &__text {
@@ -36,5 +63,20 @@
     @include abstracts.breakpointUp(large) {
       font-size: 1.375rem;
     }
+    &--skill {
+      line-height: 1.3;
+    }
+  }
+}
+
+.skill-icon {
+  height: 32px;
+  @include abstracts.breakpointUp(small) {
+    height: 48px;
+  }
+  @include abstracts.breakpointUp(medium) {
+  }
+  @include abstracts.breakpointUp(large) {
+    height: 56px;
   }
 }
