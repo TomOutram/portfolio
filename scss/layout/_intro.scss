@@ -1,4 +1,4 @@
-@use "../abstracts";
+@use '../abstracts';
 
 .intro {
   padding: 0 1rem;
@@ -41,7 +41,8 @@
     padding: 1rem;
     padding-bottom: 0.5rem;
 
-    background-color: var(--brand-purple-grey);
+    //background-color: var(--brand-purple-grey);
+    background-color: red;
     border-radius: 0.75rem;
     @include abstracts.breakpointUp(medium) {
       padding: 2rem;
