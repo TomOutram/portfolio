@@ -28,11 +28,11 @@ a:active {
 }
 
 // footer copyright
-.footer__copyright {
-  font-family: var(--body-typeface);
-  font-weight: 400;
-  font-size: 0.75rem;
-  @include abstracts.breakpointUp(medium) {
-    font-size: 0.875rem;
-  }
-}
+// .footer__copyright {
+//   font-family: var(--body-typeface);
+//   font-weight: 400;
+//   font-size: 0.75rem;
+//   @include abstracts.breakpointUp(medium) {
+//     font-size: 0.875rem;
+//   }
+// }

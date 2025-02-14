@@ -64,8 +64,8 @@
   &__sub-title {
     font-size: 1rem;
     font-family: var(--body-typeface);
-    font-weight: 500;
-    color: var(--text-body);
+    font-weight: 800;
+    color: var(--brand-purple-extra-dark);
     @include abstracts.breakpointUp(small) {
       font-size: 1.125rem;
     }
@@ -75,5 +75,8 @@
     @include abstracts.breakpointUp(large) {
       font-size: 2rem;
     }
+  }
+  &__sub-title-separator {
+    font-weight: 500;
   }
 }

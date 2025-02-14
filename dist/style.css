@@ -18,6 +18,7 @@ L >= 1199.98px
   --brand-purple-light: #c6c8f8;
   --brand-purple-mid: #b7b9f2;
   --brand-purple-dark: #2c16d5;
+  --brand-purple-extra-dark: #281f47;
   --brand-purple-grey: #efeffc;
   --brand-purple-dark-grey: #d7d8f4;
   --white: #ffffff;
@@ -80,17 +81,6 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
-}
-
-.footer__copyright {
-  font-family: var(--body-typeface);
-  font-weight: 400;
-  font-size: 0.75rem;
-}
-@media (min-width: 48.0625em) {
-  .footer__copyright {
-    font-size: 0.875rem;
-  }
 }
 
 main {
@@ -236,8 +226,8 @@ main {
 .banner__sub-title {
   font-size: 1rem;
   font-family: var(--body-typeface);
-  font-weight: 500;
-  color: var(--text-body);
+  font-weight: 800;
+  color: var(--brand-purple-extra-dark);
 }
 @media (min-width: 26.625em) {
   .banner__sub-title {
@@ -253,6 +243,9 @@ main {
   .banner__sub-title {
     font-size: 2rem;
   }
+}
+.banner__sub-title-separator {
+  font-weight: 500;
 }
 
 .banner-project {
@@ -651,6 +644,16 @@ main {
   .footer__socials-logo {
     width: 2rem;
     height: 2rem;
+  }
+}
+.footer__copyright {
+  font-family: var(--body-typeface);
+  font-weight: 400;
+  font-size: 1rem;
+}
+@media (min-width: 48.0625em) {
+  .footer__copyright {
+    font-size: 1.125rem;
   }
 }
 
