@@ -56,6 +56,7 @@
   // title -------------------------------
   &__title {
     font-size: 2rem;
+    line-height: 1;
     @include abstracts.breakpointUp(small) {
       font-size: 2.25rem;
     }
@@ -65,7 +66,7 @@
     @include abstracts.breakpointUp(large) {
       font-size: 4.4375rem;
     }
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
   // summary -------------------------------
   &__summary {
@@ -87,7 +88,7 @@
   // back btn -------------------------------
   &__back-btn-container {
     align-self: flex-start;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   &__back-btn {
     border: none;

@@ -314,7 +314,8 @@ main {
 }
 .banner-project__title {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
 }
 @media (min-width: 26.625em) {
   .banner-project__title {
@@ -355,7 +356,7 @@ main {
 }
 .banner-project__back-btn-container {
   align-self: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .banner-project__back-btn {
   border: none;
@@ -454,6 +455,7 @@ main {
   text-wrap: balance;
   font-size: 0.875rem;
   margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 @media (min-width: 26.625em) {
   .intro__text {
