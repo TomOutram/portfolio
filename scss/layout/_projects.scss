@@ -42,7 +42,7 @@
     }
     @include abstracts.breakpointUp(large) {
       flex-wrap: nowrap;
-      margin-bottom: 4rem;
+      margin-bottom: 2.5rem;
     }
     &--project-page {
       @include abstracts.breakpointUp(large) {

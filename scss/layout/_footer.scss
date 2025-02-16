@@ -26,7 +26,7 @@
   &__copyright {
     font-family: var(--body-typeface);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.875rem;
     @include abstracts.breakpointUp(medium) {
       font-size: 1.125rem;
     }

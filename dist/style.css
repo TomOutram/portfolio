@@ -546,7 +546,7 @@ main {
 @media (min-width: 75.0625em) {
   .projects__card-row {
     flex-wrap: nowrap;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
   }
 }
 @media (min-width: 75.0625em) {
@@ -651,7 +651,7 @@ main {
 .footer__copyright {
   font-family: var(--body-typeface);
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 @media (min-width: 48.0625em) {
   .footer__copyright {
