@@ -296,21 +296,14 @@ main {
 @media (min-width: 75.0625em) {
   .banner-project__hero-banner {
     padding: 3.5rem 3rem;
-    width: 60%;
   }
 }
 .banner-project__hero-img {
-  display: flex;
+  display: none;
   background-color: #bdbdbd;
   min-height: 47vw;
   border-radius: 0.75rem;
   width: 100%;
-}
-@media (min-width: 75.0625em) {
-  .banner-project__hero-img {
-    min-height: 100%;
-    width: 40%;
-  }
 }
 .banner-project__title {
   font-size: 2rem;
@@ -533,7 +526,7 @@ main {
 .projects__card-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
   width: 100%;
   margin-bottom: 2rem;
 }

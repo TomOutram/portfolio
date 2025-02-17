@@ -38,19 +38,20 @@
     }
     @include abstracts.breakpointUp(large) {
       padding: 3.5rem 3rem;
-      width: 60%;
+      // width: 60%;
     }
   }
   // hero img section -------------------------------
   &__hero-img {
-    display: flex;
+    display: none;
+    // display: flex;
     background-color: #bdbdbd;
     min-height: calc(100vw * 0.47);
     border-radius: 0.75rem;
     width: 100%;
     @include abstracts.breakpointUp(large) {
-      min-height: 100%;
-      width: 40%;
+      // min-height: 100%;
+      // width: 40%;
     }
   }
   // title -------------------------------
